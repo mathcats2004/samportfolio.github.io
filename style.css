@@ -1,1 +1,91 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(/src/fonts/PlayfairDisplayBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/src/fonts/Montserrat-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/src/fonts/Montserrat-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+:root {
+  --bg-color: #000000;
+}
 
+
+html,
+body {
+  padding: 2px;
+  padding-bottom: 300px;
+  height: 100%;
+  background-color: var(--bg-color);
+  color: black;
+  font-family: Montserrat;
+  overflow: hidden;
+  width: 800px;
+  /* margin: auto; */
+}
+
+.container {
+  display: block;
+  width: 512px;
+  position: absolute;
+  overflow: auto;
+  min-height: 586px;
+  max-height: 1200px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: white;
+  margin: auto;
+  z-index: 2;
+}
+
+.head {
+  width: 100%;
+  padding: 0;
+  background-color: #808080;
+}
+
+.navbar {
+  background-color: #bfbfbf;
+  font-family: "Playfair Display";
+  overflow: auto;
+  padding: 6px;
+}
+
+.navbar a {
+  float: left;
+  color: #000000;
+  text-decoration: none;
+  font-size: 12;
+  width: 25%;
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+  min-height: 386px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 18pt;
+}
+
+p1 {
+  font-size: 13pt;
+}
+
+.scrollbg {
+    background-image: url(/src/images/hellzonebg.png);
+    opacity: 1;
+    position: fixed;
+    width: 1000%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
