@@ -1,14 +1,14 @@
 @font-face {
-    font-family: "Playfair Display";
-    src: url(/src/fonts/PlayfairDisplayBold.ttf) format("truetype");
+    font-family: "Aesthet Nova Black";
+    src: url(/src/fonts/AesthetNova.ttf) format("truetype");
 }
 @font-face {
-    font-family: "Montserrat";
-    src: url(/src/fonts/Montserrat-Regular.ttf) format("truetype");
+    font-family: "New Spirit Light";
+    src: url(/src/fonts/NewSpiritLight.otf) format("opentype");
 }
 @font-face {
-    font-family: "Montserrat";
-    src: url(/src/fonts/Montserrat-Bold.ttf) format("truetype");
+    font-family: "New Spirit Bold";
+    src: url(/src/fonts/NewSpiritBold.otf) format("opentype");
     font-weight: bold;
 }
 :root {
@@ -23,18 +23,29 @@ body {
   height: 100%;
   background-color: var(--bg-color);
   color: black;
-  font-family: Montserrat;
-  overflow: hidden;
-  width: 800px;
-  /* margin: auto; */
+  font-family: "New Spirit Light";
+  overflow-x: hidden;
+  width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  display: block;
+  min-height: 132px;
+  font-family: "Aesthet Nova Black";
+}
+
+.title {
+  text-align: center;
+  
 }
 
 .container {
   display: block;
-  width: 512px;
+  width: 1200px;
   position: absolute;
   overflow: auto;
-  min-height: 586px;
+  min-height: 1200px;
   max-height: 1200px;
   border-radius: 5px;
   border-style: none;
@@ -51,7 +62,7 @@ body {
 
 .navbar {
   background-color: #bfbfbf;
-  font-family: "Playfair Display";
+  font-family: "New Spirit Bold";
   overflow: auto;
   padding: 6px;
 }
@@ -65,27 +76,11 @@ body {
   text-align: center;
 }
 
-.content {
-  padding: 20px;
-  min-height: 386px;
-  text-align: left;
-}
-
 h1 {
   font-size: 18pt;
+  font-family: "New Spirit Bold";
 }
 
 p1 {
   font-size: 13pt;
-}
-
-.scrollbg {
-    background-image: url(/src/images/hellzonebg.png);
-    opacity: 1;
-    position: fixed;
-    width: 1000%;
-    height: 100%;
-    top: 0%;
-    left: 0%;
-    z-index: 1;
 }
